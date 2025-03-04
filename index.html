@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jogo da adivinhacao</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body onload="escolher_numero()">
+    <div class="cabecalho">
+        <h1>
+            adivinhe o numero
+        </h1>
+        <input type="number" id="numero_cliente" placeholder="digite sua resposta aqui">
+        <br>
+        <button type="submit" onclick="palpite()">enviar resposta</button>
+        <p id="maior_ou_menor"></p>
+        <p id="titulo_tentativas"></p>
+        <p id="tentativas"></p>
+        <p id="titulo_escolhidos"></p>
+        <p id="numeros_escolhidos"></p>
+        <p id="titulo_nota"></p>
+        <p id="nota"></p>
+        <button onclick="escolher_numero()">novo jogo</button>
+    </div>
+</body>
+</html>
