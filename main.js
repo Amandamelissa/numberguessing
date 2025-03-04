@@ -20,8 +20,9 @@ function palpite(){
         document.getElementById("titulo_escolhidos").innerText = 'numeros escolhidos'
     }
     numero_cliente = document.getElementById('numero_cliente').value
+    tentativas ++
     if(numero_cliente == numero_computador){
-        var nota = 10 - tentativas
+        var nota = 11 - tentativas
         if(nota <= 0){
             document.getElementById("titulo_nota").innerText = 'sua nota foi'
             document.getElementById('nota').innerText = 0
@@ -36,7 +37,6 @@ function palpite(){
     else{
         numeros_escolhidos.push(numero_cliente)
         document.getElementById("numeros_escolhidos").innerText = numeros_escolhidos
-        tentativas ++
         document.getElementById("tentativas").innerText = tentativas
         if (numero_cliente < numero_computador){
             document.getElementById('maior_ou_menor').innerText ='seu palpite foi muito baixo'
