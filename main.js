@@ -24,12 +24,16 @@ function palpite(){
     if(numero_cliente == numero_computador){
         var nota = 11 - tentativas
         if(nota <= 0){
+            numeros_escolhidos.push(numero_cliente)
             document.getElementById("numeros_escolhidos").innerText = numeros_escolhidos
             document.getElementById("tentativas").innerText = tentativas
             document.getElementById("titulo_nota").innerText = 'sua nota foi'
             document.getElementById('nota').innerText = 0
         }
         else{
+            numeros_escolhidos.push(numero_cliente)
+            document.getElementById("numeros_escolhidos").innerText = numeros_escolhidos
+            document.getElementById("tentativas").innerText = tentativas
             document.getElementById("titulo_nota").innerText = 'sua nota foi'
             document.getElementById('nota').innerText = nota
         }
