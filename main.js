@@ -22,7 +22,7 @@ function palpite(){
     numero_cliente = document.getElementById('numero_cliente').value
     if(numero_cliente == numero_computador){
         var nota = 10 - tentativas
-        if(tentativas <= 0){
+        if(nota <= 0){
             document.getElementById("titulo_nota").innerText = 'sua nota foi'
             document.getElementById('nota').innerText = 0
         }
